@@ -1,0 +1,46 @@
+Package: SepTest
+Title: Tests for First-Order Separability in Spatio-Temporal Point Processes
+Version: 0.0.1
+Date: 2025-10-25
+Author: Mohammad Ghorbani [author, creator], Nafiseh Vafaei [author]
+Maintainer: Mohammad Ghorbani <mohammad.ghorbani@slu.se>
+Description: Provides statistical tools for testing first-order separability in spatio-temporal point 
+ processes, that is, whether the spatio-temporal intensity function can be expressed as a product 
+ of spatial and temporal components. The package implements several hypothesis tests, including 
+ exact and asymptotic methods for Poisson and non-Poisson processes. Methods include global 
+ envelope tests, chi-squared-type statistics, and a novel Hilbert-Schmidt independence
+ criterion (HSIC) test with block or pure permutations. Simulation studies and real-world 
+ examples, including the 2001 UK foot-and-mouth disease outbreak and Valencia varicella 
+ data, illustrate its utility. The package encompasses all simulation studies and applications 
+ presented in Ghorbani et al. (2021, 2025). 
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    combinat,
+    dHSIC,
+    fields,
+    GET,
+    ggplot2,
+    graphics,
+    MASS,
+    patchwork,
+    reshape2,
+    scatterplot3d,
+    spatstat.explore,
+    spatstat.geom,
+    spatstat.model,
+    splancs,
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    rmarkdown,
+    pkgdown,
+    knitr,
+    spatstat,
+    stpp,
+    RColorBrewer
+BugReports: https://github.com/mghorbani01/SepTest/issues
+URL: https://github.com/mghorbani01/SepTest
+Config/testthat/edition: 3
