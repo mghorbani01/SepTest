@@ -120,24 +120,25 @@ calc.bandwidths.and.edgecorr <- function(X, s.region, t.region, n.grid,
     stats::pnorm(tmin, mean = tvals, sd = delta)
 
   # ---- spatial edge mass using bounding-box approximation ----
-  bb <- spatstat.geom::boundingbox(ObsW)
-  xmin <- bb$xrange[1L]; xmax <- bb$xrange[2L]
-  ymin <- bb$yrange[1L]; ymax <- bb$yrange[2L]
+  # bb <- spatstat.geom::boundingbox(ObsW)
+  # xmin <- bb$xrange[1L]; xmax <- bb$xrange[2L]
+  # ymin <- bb$yrange[1L]; ymax <- bb$yrange[2L]
+  #
+  # xvals <- X[, 1]
+  # yvals <- X[, 2]
+  #
+  # xmass <- stats::pnorm(xmax, mean = xvals, sd = epsilon) -
+  #   stats::pnorm(xmin, mean = xvals, sd = epsilon)
+  # ymass <- stats::pnorm(ymax, mean = yvals, sd = epsilon) -
+  #   stats::pnorm(ymin, mean = yvals, sd = epsilon)
+  #
+  # edge.space <- xmass * ymass
 
-  xvals <- X[, 1]
-  yvals <- X[, 2]
-
-  xmass <- stats::pnorm(xmax, mean = xvals, sd = epsilon) -
-    stats::pnorm(xmin, mean = xvals, sd = epsilon)
-  ymass <- stats::pnorm(ymax, mean = yvals, sd = epsilon) -
-    stats::pnorm(ymin, mean = yvals, sd = epsilon)
-
-  edge.space <- xmass * ymass
-
+  edge.diggle <- spatstat.explore::densitypointsEngine(SPP, diggle = TRUE, sigma=epsilon, spill=TRUE)$edg
   # Numerical safety: in extreme cases these can be ~0
-  if (any(edge.time <= 0) || any(edge.space <= 0)) {
+  if (any(edge.time <= 0) || any(edge.diggle <= 0)) {
     warning("Some edge-correction masses are non-positive (numerical underflow or points far outside window).")
   }
 
-  list(bw = h, time = edge.time, space = edge.space)
+  list(bw = h, time = edge.time, space = edge.diggle)
 }
