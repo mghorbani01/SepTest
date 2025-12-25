@@ -2,7 +2,8 @@
 % Please edit documentation in R/Estimate_st_intensity_point.R
 \name{estimate.intensity.point}
 \alias{estimate.intensity.point}
-\title{Kernel intensity estimates at observed spatio-temporal points}
+\title{Kernel intensity estimates of a spatio-temporal point process at observed points and its components,
+and test statistics for first-order separability}
 \usage{
 estimate.intensity.point(X, n.grid, edge)
 }

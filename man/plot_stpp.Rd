@@ -86,7 +86,7 @@ Testing the first-order separability hypothesis for spatio-temporal point patter
 }
 \seealso{
 \code{\link{rstpoispp}},
-\code{\link{st.intensity}},
+\code{\link{estimate.st.intensity}},
 \code{\link{plot_stlgcp}},
 \code{\link{chi2.test}},
 \code{\link{dHS.test}}

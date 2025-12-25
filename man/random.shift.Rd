@@ -2,7 +2,7 @@
 % Please edit documentation in R/Random_shif.R
 \name{random.shift}
 \alias{random.shift}
-\title{Apply a Circular Random Shift to the Temporal Component of a Spatio-Temporal Point Pattern}
+\title{Apply a circular random shift to the temporal component of a spatio-temporal point pattern}
 \usage{
 random.shift(X, shifted_col = 3)
 }

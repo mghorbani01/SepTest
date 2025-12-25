@@ -1,4 +1,5 @@
-#' Kernel intensity estimates at observed spatio-temporal points
+#' Kernel intensity estimates of a spatio-temporal point process at observed points and its components,
+#' and test statistics for first-order separability
 #'
 #' Computes kernel-based spatial, temporal, separable, and non-separable intensity
 #' estimates evaluated at the observed spatio-temporal event locations. The function

@@ -96,7 +96,7 @@
 #' X <- cbind(runif(100), runif(100), runif(100, 0, 10))
 #' s.region <- matrix(c(0, 0, 1, 0, 1, 1, 0, 1), ncol = 2, byrow = TRUE)
 #' t.region <- c(0, 10)
-#' result <- st.intensity(X, s.region, t.region, at = "pixels", n.grid = c(64, 64, 32))
+#' result <- estimate.st.intensity(X, s.region, t.region, at = "pixels", n.grid = c(64, 64, 32))
 #' str(result$S.fun)
 #' image(result$S.fun[,,5], main = "S-function slice at t[5]",
 #'        col = topo.colors(50))
@@ -105,7 +105,7 @@
 #' }
 #'
 #' @export
-st.intensity <-function(X, s.region, t.region, at=c("pixels","points"),
+estimate.st.intensity <-function(X, s.region, t.region, at=c("pixels","points"),
                         n.grid = c(25,25,20)) {
   at <- match.arg(at)  # This ensures 'at' is either "pixels" or "points" and length 1
   np <- length(X[,1]) # Number of points

@@ -1,4 +1,5 @@
-#' Kernel-based intensity estimation on a space-time grid
+#' Kernel-based intensity estimation on a space-time grid and its components,
+#' and test statistics for first-order separability
 #'
 #' Computes kernel-smoothed estimates of spatial, temporal, separable, and non-separable
 #' spatio-temporal intensity functions on a regular space-time grid, together with

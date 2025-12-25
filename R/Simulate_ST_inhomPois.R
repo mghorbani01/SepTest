@@ -1,4 +1,4 @@
-#' Simulate an Inhomogeneous Spatio-Temporal Poisson Point Process
+#' Simulate an inhomogeneous spatio-temporal Poisson point process
 #'
 #' Generates a realization of an inhomogeneous Poisson point process (STPP)
 #' in space and time using the standard thinning method.
@@ -50,7 +50,7 @@
 #' @seealso
 #' \code{\link{get.lambda.function}} to construct spatio-temporal intensity models;
 #' \code{\link{get.lambda.max}} to compute intensity maxima;
-#' \code{\link{st.intensity}} for intensity estimation;
+#' \code{\link{estimate.st.intensity}} for intensity estimation;
 #' \code{\link{plot_stpp}} for visualization.
 #' @export
 #'

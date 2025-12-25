@@ -2,7 +2,7 @@
 % Please edit documentation in R/Simulate_ST_DPP.R
 \name{rstDPP}
 \alias{rstDPP}
-\title{Simulate a Spatio-Temporal Determinantal Point Process (DPP) Based on Spectral Density}
+\title{Simulate a spatio-temporal Determinantal Point Process (DPP) based on spectral density}
 \usage{
 rstDPP(
   mode = c("stationary", "inhom"),

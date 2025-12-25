@@ -10,8 +10,8 @@ Description: Provides statistical tools for testing first-order separability in 
  exact and asymptotic methods for Poisson and non-Poisson processes. Methods include global 
  envelope tests, chi-squared-type statistics, and a novel Hilbert-Schmidt independence
  criterion (HSIC) test with block or pure permutations. Simulation studies and real-world 
- examples, including the 2001 UK foot-and-mouth disease outbreak and Valencia varicella 
- data, illustrate its utility. The package encompasses all simulation studies and applications 
+ examples, including the 2001 UK foot-and-mouth disease outbreak data, illustrate its utility. 
+ The package encompasses all simulation studies and applications 
  presented in Ghorbani et al. (2021, 2025). 
 License: GPL-3
 Encoding: UTF-8

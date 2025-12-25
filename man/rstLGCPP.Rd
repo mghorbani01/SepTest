@@ -2,7 +2,7 @@
 % Please edit documentation in R/Simulate_ST_LGCP.R
 \name{rstLGCPP}
 \alias{rstLGCPP}
-\title{Simulate a Spatio-Temporal Log-Gaussian Cox Process (LGCP)}
+\title{Simulate a spatio-temporal Log-Gaussian Cox process (LGCP)}
 \usage{
 rstLGCPP(
   xlim = NULL,

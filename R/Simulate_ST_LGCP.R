@@ -1,4 +1,4 @@
-#' Simulate a Spatio-Temporal Log-Gaussian Cox Process (LGCP)
+#' Simulate a spatio-temporal Log-Gaussian Cox process (LGCP)
 #'
 #' Generates a realization of a spatio-temporal LGCP over a user-defined domain. The process is simulated
 #' using a log-Gaussian random field combined with a deterministic trend function, and points are generated

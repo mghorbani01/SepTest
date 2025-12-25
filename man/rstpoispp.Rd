@@ -2,7 +2,7 @@
 % Please edit documentation in R/Simulate_ST_inhomPois.R
 \name{rstpoispp}
 \alias{rstpoispp}
-\title{Simulate an Inhomogeneous Spatio-Temporal Poisson Point Process}
+\title{Simulate an inhomogeneous spatio-temporal Poisson point process}
 \usage{
 rstpoispp(
   lambda,
@@ -91,7 +91,7 @@ of spatio-temporal point processes, \emph{TEST} .
 \seealso{
 \code{\link{get.lambda.function}} to construct spatio-temporal intensity models;
 \code{\link{get.lambda.max}} to compute intensity maxima;
-\code{\link{st.intensity}} for intensity estimation;
+\code{\link{estimate.st.intensity}} for intensity estimation;
 \code{\link{plot_stpp}} for visualization.
 }
 \author{

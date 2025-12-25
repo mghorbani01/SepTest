@@ -45,7 +45,7 @@ Testing the first-order separability hypothesis for spatio-temporal point patter
 \emph{Computational Statistics & Data Analysis}, \bold{161}, 107245.
 }
 \seealso{
-\code{\link{norm2d}}, \code{\link{get.lambda.function}}, \code{\link{st.intensity}}
+\code{\link{norm2d}}, \code{\link{get.lambda.function}}, \code{\link{estimate.st.intensity}}
 }
 \author{
 Mohammad Ghorbani \email{mohammad.ghorbani@slu.se}\cr

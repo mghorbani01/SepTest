@@ -10,6 +10,7 @@
 <url><loc>/reference/dHS.test.html</loc></url>
 <url><loc>/reference/estimate.intensity.pixel.html</loc></url>
 <url><loc>/reference/estimate.intensity.point.html</loc></url>
+<url><loc>/reference/estimate.st.intensity.html</loc></url>
 <url><loc>/reference/Gauss.st.F.html</loc></url>
 <url><loc>/reference/get.lambda.function.html</loc></url>
 <url><loc>/reference/get.lambda.max.html</loc></url>
@@ -27,6 +28,5 @@
 <url><loc>/reference/rstpoispp.html</loc></url>
 <url><loc>/reference/S.based.functions.html</loc></url>
 <url><loc>/reference/sim.procedures.html</loc></url>
-<url><loc>/reference/st.intensity.html</loc></url>
 </urlset>
 

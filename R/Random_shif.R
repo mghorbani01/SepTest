@@ -1,4 +1,4 @@
-#' Apply a Circular Random Shift to the Temporal Component of a Spatio-Temporal Point Pattern
+#' Apply a circular random shift to the temporal component of a spatio-temporal point pattern
 #'
 #' Performs a circular random shift of the temporal coordinate in a spatio-temporal
 #' point pattern. This operation preserves the spatial configuration while

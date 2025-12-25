@@ -1,4 +1,4 @@
-#' Simulate a Spatio-Temporal Determinantal Point Process (DPP) Based on Spectral Density
+#' Simulate a spatio-temporal Determinantal Point Process (DPP) based on spectral density
 #'
 #' Generates a realization of a spatio-temporal determinantal point process (DPP)
 #' using a user-defined spectral density model.

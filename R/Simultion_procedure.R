@@ -1,4 +1,4 @@
-#' Generate Permuted Versions of a Spatio-Temporal Point Pattern
+#' Generate permuted versions (pure or block) of a spatio-temporal point pattern
 #'
 #' Implements two types of permutation procedures for resampling the time component of spatio-temporal point process data:
 #' \describe{

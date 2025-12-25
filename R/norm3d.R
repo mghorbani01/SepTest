@@ -14,7 +14,7 @@
 #' @return Numeric vector of densities (or log-densities) with length determined by standard
 #' recycling rules for \code{x}, \code{y}, and \code{t}.
 #'
-#' @seealso \code{\link{norm2d}}, \code{\link{get.lambda.function}}, \code{\link{st.intensity}}
+#' @seealso \code{\link{norm2d}}, \code{\link{get.lambda.function}}, \code{\link{estimate.st.intensity}}
 #'
 #' @author
 #' Mohammad Ghorbani \email{mohammad.ghorbani@slu.se}\cr

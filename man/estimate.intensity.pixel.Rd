@@ -2,7 +2,8 @@
 % Please edit documentation in R/Estimate_st_intensity_pixel.R
 \name{estimate.intensity.pixel}
 \alias{estimate.intensity.pixel}
-\title{Kernel-based intensity estimation on a space-time grid}
+\title{Kernel-based intensity estimation on a space-time grid and its components,
+and test statistics for first-order separability}
 \usage{
 estimate.intensity.pixel(X, s.region, t.region, n.grid, edge, owin = NULL)
 }

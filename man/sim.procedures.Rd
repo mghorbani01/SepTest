@@ -2,7 +2,7 @@
 % Please edit documentation in R/Simultion_procedure.R
 \name{sim.procedures}
 \alias{sim.procedures}
-\title{Generate Permuted Versions of a Spatio-Temporal Point Pattern}
+\title{Generate permuted versions (pure or block) of a spatio-temporal point pattern}
 \usage{
 sim.procedures(X, nperm = 1999, nblocks = 4, method = c("block", "pure"))
 }
