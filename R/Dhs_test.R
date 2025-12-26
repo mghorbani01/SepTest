@@ -86,13 +86,19 @@ dHS.test <- function(X,
   }
 
   if (!is.null(bandwidth)) {
-    if (!is.numeric(bandwidth) || length(bandwidth) != 1L || !is.finite(bandwidth) || bandwidth <= 0) {
-      stop("`bandwidth` must be a single finite positive numeric value, or NULL.")
+    if (!is.numeric(bandwidth) ||
+        length(bandwidth) < 1L ||
+        any(!is.finite(bandwidth)) ||
+        any(bandwidth <= 0)) {
+      stop("`bandwidth` must be a finite positive numeric value (or vector), or NULL.")
     }
     bandwidth <- as.numeric(bandwidth)
+
+    # Optional convenience: if a single number is given, reuse for both x and y
+    if (length(bandwidth) == 1L) bandwidth <- rep(bandwidth, 2L)
   }
 
-  # observed statistic (adaptive gaussian)
+  # observed statistic (adaptive Gaussian)
   res_obs <- dHSIC::dhsic(X[, 1:2, drop = FALSE], X[, 3], kernel = "gaussian")
   obs_stat <- res_obs$dHSIC
   bw_hat <- res_obs$bandwidth
